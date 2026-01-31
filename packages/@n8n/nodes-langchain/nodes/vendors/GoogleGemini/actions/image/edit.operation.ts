@@ -146,7 +146,7 @@ export async function execute(this: IExecuteFunctions, i: number): Promise<INode
 	const prompt = this.getNodeParameter('prompt', i, '');
 	let model = this.getNodeParameter('modelId', i, '', { extractValue: true }) as string;
 	if (!model) {
-		model = 'models/gemini-2.5-flash-image-preview';
+		model = 'models/gemini-2.5-flash-image';
 	}
 
 	const binaryPropertyOutput = this.getNodeParameter('options.binaryPropertyOutput', i, 'edited');
